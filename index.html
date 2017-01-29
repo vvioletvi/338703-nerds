@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -32,54 +33,59 @@
       </div>
       <div class="container slider" style="height: 545px;">
         <ul>
-          <li class="slider-1">
+          <li class="slider-1" id="slide-1">
             <h1 class="slider-name">Долго, дорого, скрупулезно.</h1>
             <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-            <a class=button href="#">Узнать больше</a>
+            <a class="button" href="#">Узнать больше</a>
             <img src="img/nerds-index-slide1.png" width="698" height="413" alt="Mobile">
           </li>
-          <li class="slider-2">
+          <li class="slider-2" id="slide-2">
             <h1 class="slider-name">Любим математику как никто другой</h1>
             <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-            <a class=button href="#">Узнать больше</a>
+            <a class="button" href="#">Узнать больше</a>
             <img src="img/nerds-index-slide2.png" width="663" height="430" alt="Desktop">
           </li>
-          <li class="slider-3">
+          <li class="slider-3" id="slide-3">
             <h1 class="slider-name">Только ночь, только хардкор</h1>
             <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-            <a class=button href="#">Узнать больше</a>
-            <img src="img/nerds-index-slide2.png" width="759" height="411" alt="Tablet">
+            <a class="button" href="#">Узнать больше</a>
+            <img src="img/nerds-index-slide3.png" width="759" height="411" alt="Tablet">
           </li>
         </ul>
         <div class="control">
-          <input type="radio" id="point-1" name="point" checked>
-          <label for="point-1"></label>
-          <input type="radio" id="point-2" name="point">
-          <label for="point-2"></label>
-          <input type="radio" id="point-3" name="point">
-          <label for="point-3"></label>
+          <ul>
+            <li>
+              <a href="#slide-1">Слайд 1</a>
+            </li>
+            <li>
+              <a href="#slide-2">Слайд 2</a>
+            </li>
+            <li>
+              <a href="#slide-3">Слайд 3</a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
     <main class="container">
       <section class="features">
         <section class="features-item">
-          <img src="img/illustration-1.png" width="300" height="146" alt="Website">
-          <h3>Веб-сайты</h3>
+          <img src="img/illustration-1.jpg" width="300" height="146" alt="Website">
+          <h2>Веб-сайты</h2>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a class=button href="#">Заказать</a>
+          <a class="button" href="#">Заказать</a>
         </section>
         <section class="features-item">
-          <img src="img/illustration-2.png" width="300" height="146" alt="Website">
-          <h3>Приложения</h3>
+          <img src="img/illustration-2.jpg" width="300" height="146" alt="Application">
+          <h2>Приложения</h2>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a class=button href="#">Заказать</a>
+          <a class="button" href="#">Заказать</a>
         </section>
         <section class="features-item">
-          <img src="img/illustration-3.png" width="300" height="146" alt="Website">
-          <h3>Презентации</h3>
+          <img src="img/illustration-3.jpg" width="300" height="146" alt="Presentation">
+          <h2>Презентации</h2>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a class=button href="#">Заказать</a>
+          <a class="button" href="#">Заказать</a>
         </section>
       </section>
       <div class="index-content">
@@ -100,7 +106,7 @@
           </ul>
         </div>
         <div class="index-content-right">
-          <img src="img/nerds-illustration.png" width="360" height="208" alt="Logo">
+          <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Logo">
           <h4>с 2004 года Любим точность во всем:</h4>
           <ul>
             <li>
@@ -127,16 +133,16 @@
     <main>
     <footer class="main-footer">
       <div class="map">
-        <img src="img/logo-1.png" width="1440" height="563" alt="Map">
+        <img src="img/map.jpg" width="1440" height="416" alt="Map">
         <div class="adress">
-          <h4>NЁRDS DESIGN STUDIO</h4>
+          <h3>NЁRDS DESIGN STUDIO</h3>
           <p>191186, Санкт-Петербург,<br>
             ул. Б. Конюшенная, д. 19/8<br>
             тел. +7 (812) 275-75-75</p>
-          <a class=button href="#">Напишите нам</a>
+          <a class="button" href="#">Напишите нам</a>
         </div>
         <div class="map-marker">
-          <img src="img/map-marker.png" width="237" height="190" alt="Map-marker">
+          <img src="img/map-marker.png" width="231" height="190" alt="Map-marker">
         </div>
       </div>
       <div class="container">
