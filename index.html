@@ -7,7 +7,7 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
+      <div class="container clearfix">
         <div class="index-logo">
           <img src="img/nerds-logo.png" width="160" height="65" alt="NЁRDS DESIGN STUDIO">
         </div>
@@ -31,28 +31,34 @@
           <a class="cart" href="#">Корзина</a>
         </div>
       </div>
-      <div class="container slider">
+      <div class="container slider clearfix">
         <ul>
           <li class="slider-1" id="slide-1">
-            <h1 class="slider-name">Долго, дорого, скрупулезно.</h1>
-            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-            <a class="button" href="#">Узнать больше</a>
+            <div class="slider-content">
+              <h1 class="slider-name">Долго, дорого, скрупулезно.</h1>
+              <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+              <a class="button" href="#">Узнать больше</a>
+            </div>
             <div class=slider-img>
               <img src="img/nerds-index-slide1.png" width="698" height="413" alt="Mobile">
             </div>
           </li>
-          <li class="slider-2" id="slide-2">
-            <h1 class="slider-name">Любим математику как никто другой</h1>
-            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-            <a class="button" href="#">Узнать больше</a>
+          <!--<li class="slider-2" id="slide-2">
+            <div class="slider-content">
+              <h1 class="slider-name">Любим математику как никто другой</h1>
+              <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+              <a class="button" href="#">Узнать больше</a>
+            </div>
             <div class=slider-img>
               <img src="img/nerds-index-slide2.png" width="663" height="430" alt="Desktop">
             </div>
           </li>
           <li class="slider-3" id="slide-3">
-            <h1 class="slider-name">Только ночь, только хардкор</h1>
-            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-            <a class="button" href="#">Узнать больше</a>
+            <div class="slider-content">
+              <h1 class="slider-name">Только ночь, только хардкор</h1>
+              <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+              <a class="button" href="#">Узнать больше</a>
+            </div>
             <div class=slider-img>
               <img src="img/nerds-index-slide3.png" width="759" height="411" alt="Tablet">
             </div>
@@ -71,10 +77,10 @@
             </li>
           </ul>
         </div>
-      </div>
+      </div>-->
     </header>
     <main class="container">
-      <section class="features">
+      <section class="features clearfix">
         <article class="features-item">
           <img src="img/illustration-1.jpg" width="300" height="146" alt="Website">
           <h2>Веб-сайты</h2>
@@ -94,64 +100,69 @@
           <a class="button" href="#">Заказать</a>
         </article>
       </section>
-      <div class="index-content">
-        <div class="index-content-left">
-          <p class="index-content-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
-          <span>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</span>
-          <h4>Выполняем заказы на разработку:</h4>
-          <ul>
-            <li>
-              <p>Веб-сайтов любой сложности</p>
-            </li>
-            <li>
-              <p>Мобильных приложений для iOS и Android</p>
-            </li>
-            <li>
-              <p>Слайдшоу и видео для корпоративных презентаций</p>
-            </li>
-          </ul>
+      <div class="index-content clearfix">
+        <div class="about-us clearfix">
+          <div class="index-content-left">
+            <p class="index-content-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+            <span>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</span>
+            <h4>Выполняем заказы на разработку:</h4>
+            <ul>
+              <li>
+                <p>Веб-сайтов любой сложности</p>
+              </li>
+              <li>
+                <p>Мобильных приложений для iOS и Android</p>
+              </li>
+              <li>
+                <p>Слайдшоу и видео для корпоративных презентаций</p>
+              </li>
+            </ul>
+          </div>
+          <div class="index-content-right">
+            <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Logo">
+            <h4>с 2004 года Любим точность во всем:</h4>
+            <ul>
+              <li>
+                <b>146%</b>
+							  <p>Уровень самоотдачи</p>
+              </li>
+              <li>
+                <b>100%</b>
+							  <p>Соблюдение сроков</p>
+              </li>
+              <li>
+                <b>50%</b>
+							  <p>Минимальная предоплата</p>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="index-content-right">
-          <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Logo">
-          <h4>с 2004 года Любим точность во всем:</h4>
-          <ul>
-            <li>
-              <b>146%</b>
-							<p>Уровень самоотдачи</p>
-            </li>
-            <li>
-              <b>100%</b>
-							<p>Соблюдение сроков</p>
-            </li>
-            <li>
-              <b>50%</b>
-							<p>Минимальная предоплата</p>
-            </li>
-          </ul>
-        </div>
-        <div class="partners">
+        <div class="partners clearfix">
           <div class="partner-1"><img src="img/logo-1.png" width="199" height="68" alt="Html-academy"></div>
           <div class="partner-2"><img src="img/logo-2.png" width="209" height="90" alt="Borodinski"></div>
           <div class="partner-3"><img src="img/logo-3.png" width="185" height="52" alt="Pink"></div>
           <div class="partner-4"><img src="img/logo-4.png" width="173" height="84" alt="Mishka"></div>
         </div>
       </div>
-    <main>
-    <footer class="main-footer">
-      <div class="map">
-        <img src="img/map.jpg" width="1440" height="416" alt="Map">
-        <div class="adress">
-          <h3>NЁRDS DESIGN STUDIO</h3>
-          <p>191186, Санкт-Петербург,<br>
-            ул. Б. Конюшенная, д. 19/8<br>
-            тел. +7 (812) 275-75-75</p>
-          <a class="button" href="#">Напишите нам</a>
-        </div>
-        <div class="map-marker">
-          <img src="img/map-marker.png" width="231" height="190" alt="Map-marker">
-        </div>
+    </main>
+    <footer class="main-footer clearfix">
+      <div class="map clearfix">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1969.312323487249!2d30.320988978160425!3d59.93902966532363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1486316012099" width="100%" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <!--<img src="img/map.jpg" width="1440" height="416" alt="Map">-->
+        <div class="map-markers container">
+          <div class="adress">
+            <h3>NЁRDS DESIGN STUDIO</h3>
+            <p>191186, Санкт-Петербург,<br>
+              ул. Б. Конюшенная, д. 19/8<br>
+              тел. +7 (812) 275-75-75</p>
+            <a class="button" href="#">Напишите нам</a>
+          </div>
+          <div class="marker">
+            <img src="img/map-marker.png" width="231" height="190" alt="Map-marker">
+          </div>
       </div>
-      <div class="container">
+      </div>
+      <div class="social container clearfix">
         <section class="footer-social">
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
