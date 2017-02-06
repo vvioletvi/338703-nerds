@@ -60,6 +60,10 @@ h2 {
   min-height: 414px;
 }
 
+.slider-2, .slider-3 {
+  display: none;
+}
+
 .slider-content {
   width: 560px;
   float: left;
@@ -128,14 +132,66 @@ h2 {
   margin-right: 0;
 }
 
+.catalog-title {
+  min-height: 242px;
+}
+
+.catalog {
+  min-height: 2167;
+}
+
+.catalog-content-left {
+  float: left;
+  width: 300px;
+  min-height: 790px;
+  margin-right: 100px;
+}
+
+.catalog-content-right {
+  float: left;
+  width: 760px;
+  min-height: 2036px;
+  margin-bottom: 60px;
+}
+
+.sorting {
+  min-height: 36px;
+}
+
+.templates {
+  min-height: 1925px;
+  margin-bottom: 25px;
+}
+
+.sedona, .pink-app, .barbershop, .mishka, .a-plus, .kvast {
+  float:left;
+  width: 360px;
+  min-height: 616px;
+  margin-bottom: 36px;
+}
+
+.sedona, .barbershop, .a-plus {
+  margin-right: 40px;
+}
+
+.templates-hover {
+  display: none;
+}
+
+.paginator {
+  min-height: 50px;
+}
+
 .main-footer {
   margin-top: 82px;
 }
 
+/*
 .map {
   min-height: 417px;
-  background-image: url("..img/map.jpg");
+  background-image: url("../img/map.jpg");
 }
+*/
 
 .adress {
   float: left;
