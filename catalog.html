@@ -11,7 +11,9 @@
     <header class="main-header">
       <div class="container clearfix">
         <div class="index-logo">
-          <img src="img/nerds-logo.png" width="160" height="65" alt="NЁRDS DESIGN STUDIO">
+          <a href="index.html">
+            <img src="img/nerds-logo.png" width="160" height="65" alt="NЁRDS DESIGN STUDIO">
+          </a>
         </div>
         <nav class="main-navigation">
           <ul>
@@ -21,8 +23,8 @@
             <li>
               <a href="#">Клиенты</a>
             </li>
-            <li>
-              <a href="#">Магазин</a>
+            <li class="active">
+              <span>Магазин</span>
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -39,7 +41,7 @@
         </div>
       </div>
     </header>
-    <main class="container">
+    <main class="container clearfix">
       <div class-"catalog clearfix">
         <div class="catalog-content-left">
           <form action="#" method="get">
@@ -47,10 +49,11 @@
               <legend>Стоимость:</legend>
               <div class="range-controls">
                 <div class="range-bar">
-                  <div class="range-bar-min"></div>
-                  <div class="range-bar-max"></div>
-                  <div class="range-bar-line-green"></div>
-                  <div class="range-bar-line"></div>
+                  <div class="range-bar-min toggle"></div>
+                  <div class="range-bar-max toggle"></div>
+                  <div class="range-bar-line">
+                    <div class="range-bar-line-green"></div>
+                  </div>
                 </div>
                 <div class="range-cost">
                   <label for="min">От</label>
@@ -77,9 +80,9 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="features">
+            <fieldset class="catalog-features">
               <legend>Особенности:</legend>
-              <ul class="features">
+              <ul class="catalog-features">
                 <li>
                   <input type="checkbox" id="feature-1" name="check" checked>
                   <label for="feature-1">Слайдер</label>

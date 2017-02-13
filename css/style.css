@@ -98,6 +98,26 @@ h2 {
   opacity: 0.3;
 }
 
+.main-navigation .active {
+  position: relative;
+}
+
+.main-navigation .active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 113px;
+  width: 75px;
+  height: 2px;
+  background-color: #fb565a;
+}
+
+.main-navigation .active span {
+  display: block;
+  padding-top: 80px;
+  color: black;
+}
+
 .user-block {
   min-height: 114px;
   width: 180px;
@@ -410,7 +430,15 @@ h2 {
 }
 
 .catalog-title {
+  width: 725px;
   min-height: 242px;
+  margin: auto;
+}
+
+.catalog-title h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 70px;
 }
 
 .catalog {
@@ -419,9 +447,49 @@ h2 {
 
 .catalog-content-left {
   float: left;
-  width: 300px;
+  width: 260px;
   min-height: 790px;
-  margin-right: 100px;
+  margin-right: 140px;
+}
+
+.catalog-content-left fieldset {
+  border: 0;
+}
+
+.catalog-content-left legend {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.range-bar {
+  position: relative;
+  height: 41px;
+  padding-top: 39px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 2px;
+  background: #eeeeee;
+  margin-bottom: 14px;
+}
+
+.toggle {
+  width: 4px;
+  height: 4px;
+  border: 8px solid #fff;
+  background: #ababab;
+}
+
+.range-bar-line {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-bar-line-green {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
 }
 
 .catalog-content-right {
