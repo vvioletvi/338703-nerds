@@ -42,29 +42,20 @@
             <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
             <a class="button" href="#">Узнать больше</a>
           </div>
-          <!--<div class=slider-img>
-            <img src="img/nerds-index-slide1.png" width="698" height="413" alt="Mobile">
-          </div>-->
         </div>
         <div class="slider-2 clearfix" id="slide-2">
           <div class="slider-content">
             <h1 class="slider-name">Любим математику как никто другой</h1>
-            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+            <p>Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.</p>
             <a class="button" href="#">Узнать больше</a>
           </div>
-          <!--<div class=slider-img>
-            <img src="img/nerds-index-slide2.png" width="663" height="430" alt="Desktop">
-          </div>-->
         </div>
         <div class="slider-3 clearfix" id="slide-3">
           <div class="slider-content">
-            <h1 class="slider-name">Только ночь, только хардкор</h1>
-            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+            <h1 class="slider-name">Только ночь,<br> только хардкор</h1>
+            <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
             <a class="button" href="#">Узнать больше</a>
           </div>
-          <!--<div class=slider-img>
-            <img src="img/nerds-index-slide3.png" width="759" height="411" alt="Tablet">
-          </div>-->
         </div>
         <div class="control">
           <ul>
@@ -110,13 +101,13 @@
             <h4>Выполняем заказы на разработку:</h4>
             <ul>
               <li>
-                <p>Веб-сайтов любой сложности</p>
+                <p class="red-line">Веб-сайтов любой сложности</p>
               </li>
               <li>
-                <p>Мобильных приложений для iOS и Android</p>
+                <p class="red-line">Мобильных приложений для iOS и Android</p>
               </li>
               <li>
-                <p>Слайдшоу и видео для корпоративных презентаций</p>
+                <p class="red-line">Слайдшоу и видео для корпоративных презентаций</p>
               </li>
             </ul>
           </div>
@@ -125,15 +116,15 @@
             <h4>с 2004 года Любим точность во всем:</h4>
             <ul>
               <li>
-                <b>146%</b>
+                <b>146<sup>%</sup></b>
 							  <p>Уровень самоотдачи</p>
               </li>
               <li>
-                <b>100%</b>
+                <b>100<sup>%</sup></b>
 							  <p>Соблюдение сроков</p>
               </li>
               <li>
-                <b>50%</b>
+                <b>50<sup>%</sup></b>
 							  <p>Минимальная предоплата</p>
               </li>
             </ul>
@@ -141,22 +132,22 @@
         </div>
         <div class="partners clearfix">
           <ul>
-            <li>
+            <li class="partner-logo">
               <a title="Html-academy" href="#">
                 <img src="img/logo-1.png" width="199" height="68" alt="Html-academy">
               </a>
             </li>
-            <li>
+            <li class="partner-logo">
               <a title="Borodinski" href="#">
                 <img src="img/logo-2.png" width="209" height="90" alt="Borodinski">
               </a>
             </li>
-            <li>
+            <li class="partner-logo">
               <a title="Pink" href="#">
                 <img src="img/logo-3.png" width="185" height="52" alt="Pink">
               </a>
             </li>
-            <li>
+            <li class="partner-logo">
               <a title="Mishka" href="#">
                 <img src="img/logo-4.png" width="173" height="84" alt="Mishka">
               </a>
@@ -173,8 +164,8 @@
           <div class="adress">
             <h3>NЁRDS DESIGN STUDIO</h3>
             <p>191186, Санкт-Петербург,<br>
-              ул. Б. Конюшенная, д. 19/8<br>
-              тел. +7 (812) 275-75-75</p>
+              ул. Б. Конюшенная, д. 19/8<br></p>
+              <span class="tel">тел. +7 (812) 275-75-75</span>
             <a class="button" href="#">Напишите нам</a>
           </div>
           <div class="marker">
@@ -194,5 +185,26 @@
         </section>
       </div>
     </footer>
+    <div class="modal-write-us">
+      <button class="modal-write-us-close" type="button" title="Закрыть">
+        Закрыть
+      </button>
+      <h2 class="modal-write-us-title">Напишите нам</h2>
+      <form class="write-us-form" action="http://echo.htmlacademy.ru" method="post">
+        <label for="write-name" class="first-form">
+          <span>Ваше имя</span>
+          <input type="text" name="name" placeholder="Представьтесь, пожалуйста" id="write-name">
+        </label>
+        <label for="write-mail">
+          <span>Ваш e-mail</span>
+          <input type="text" name="text" placeholder="Для отправки ответа" id="write-mail">
+        </label>
+        <label for="write-text">
+          <span>Текст письма</span>
+          <input type="text" name="post" placeholder="В свободной форме" id="write-text">
+        </label>
+        <button class="send-mail" tipe="submit">Отправить</button>
+      </form>
+    </div>
   </body>
 </html>

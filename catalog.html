@@ -56,10 +56,8 @@
                   </div>
                 </div>
                 <div class="range-cost">
-                  <label for="min">От</label>
-                  <input type="number" id="min" name="min-cost" value="0">
-                  <label for="max">До</label>
-                  <input type="number" id="max" name="min-cost" value="15000">
+                  <label class="min">От <input type="text" name="min-cost" value="0"></label>
+                  <label class="max">До <input type="text" name="min-cost" value="15000"></label>
                 </div>
               </div>
             </fieldset>
@@ -109,30 +107,30 @@
           </form>
         </div>
         <div class="catalog-content-right clearfix">
+          <div class="title">
+            Сортировать:
+          </div>
           <ul class="sorting">
-              <li>
-                Сортировать:
-              </li>
-              <li>
+            <li class="sorting-up">
+              <a href="#"></a>
+            </li>
+            <li class="sorting-down sorting-active">
+              <a href="#"></a>
+            </li>
+            <li>
+              <a class="sorting-name" href="#">По названию</a>
+            </li>
+            <li>
+              <a class="sorting-type" href="#">По типу</a>
+            </li>
+            <li class="sorting-active">
                 <a class="sorting-cost" href="#">По цене</a>
-              </li>
-              <li>
-                <a class="sorting-type" href="#">По типу</a>
-              </li>
-              <li>
-                <a class="sorting-name" href="#">По названию</a>
-              </li>
-              <li>
-                <a class="sorting-down" href="#">По убыванию</a>
-              </li>
-              <li>
-                <a class="sorting-up" href="#">По возрастанию</a>
-              </li>
-            </ul>
+            </li>
+          </ul>
           <section class="templates clearfix">
-            <article class="sedona">
+            <article class="templates-item sedona">
               <div class="browser-bar">
-                <ul>
+                <ul class="circles">
                   <li>
                     <div class="circle-1"></div>
                   </li>
@@ -147,13 +145,13 @@
               <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
               <div class="templates-hover">
                 <h3>Sedona</h3>
-                <span>Информационный сайт для туристов</span>
+                <span>Информационный сайт<br> для туристов</span>
   							<a class="button" href="#">9 900 руб.</a>
               </div>
             </article>
-            <article class="pink-app">
+            <article class="templates-item pink-app">
               <div class="browser-bar">
-                <ul>
+                <ul class="circles">
                   <li>
                     <div class="circle-1"></div>
                   </li>
@@ -168,13 +166,13 @@
               <img src="img/img-pink.jpg" width="360" height="576" alt="Pink App">
               <div class="templates-hover">
                 <h3>Pink App</h3>
-                <span>Продуктовый лендинг приложения для iOS и Android</span>
+                <span>Продуктовый лендинг<br> приложения для iOS и Android</span>
   							<a class="button" href="#">9 900 руб.</a>
               </div>
             </article>
-            <article class="barbershop">
+            <article class="templates-item barbershop">
               <div class="browser-bar">
-                <ul>
+                <ul class="circles">
                   <li>
                     <div class="circle-1"></div>
                   </li>
@@ -189,13 +187,13 @@
               <img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
               <div class="templates-hover">
                 <h3>Barbershop</h3>
-                <span>Сайт салона красоты. Для мужчин, да.</span>
+                <span>Сайт салона красоты.<br> Для мужчин, да.</span>
   							<a class="button" href="#">9 900 руб.</a>
               </div>
             </article>
-            <article class="mishka">
+            <article class="templates-item mishka">
               <div class="browser-bar">
-                <ul>
+                <ul class="circles">
                   <li>
                     <div class="circle-1"></div>
                   </li>
@@ -210,13 +208,13 @@
               <img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
               <div class="templates-hover">
                 <h3>Mishka</h3>
-                <span>Интернет-магазин вязаных игрушек</span>
+                <span>Интернет-магазин<br> вязаных игрушек</span>
   							<a class="button" href="#">9 900 руб.</a>
               </div>
             </article>
-            <article class="a-plus">
+            <article class="templates-item a-plus">
               <div class="browser-bar">
-                <ul>
+                <ul class="circles">
                   <li>
                     <div class="circle-1"></div>
                   </li>
@@ -231,13 +229,13 @@
               <img src="img/img-aplus.jpg" width="360" height="576" alt="A plus">
               <div class="templates-hover">
                 <h3>A plus</h3>
-                <span>Лендинг курсов повышения квалификации</span>
+                <span>Лендинг курсов повышения<br> квалификации</span>
   							<a class="button" href="#">9 900 руб.</a>
               </div>
             </article>
-            <article class="kvast">
+            <article class="templates-item kvast">
               <div class="browser-bar">
-                <ul>
+                <ul class="circles">
                   <li>
                     <div class="circle-1"></div>
                   </li>
@@ -252,7 +250,7 @@
               <img src="img/img-kvast.jpg" width="360" height="576" alt="Kvast">
               <div class="templates-hover">
                 <h3>Кваст</h3>
-                <span>Промо-сайт производителя крафтового кваса</span>
+                <span>Промо-сайт производителя<br> крафтового кваса</span>
   							<a class="button" href="#">9 900 руб.</a>
               </div>
             </article>
@@ -260,16 +258,16 @@
           <div class="paginator">
             <ul>
               <li>
-                <a class="active" href="#">1</a>
+                <span class="pag-active" href="#">1</span>
               </li>
               <li>
-                <a href="#">2</a>
+                <a class="paginator-link" href="#">2</a>
               </li>
               <li>
-                <a href="#">3</a>
+                <a class="paginator-link" href="#">3</a>
               </li>
               <li>
-                <a href="#">Следующая</a>
+                <a class="paginator-link paginator-button" href="#">Следующая</a>
               </li>
             </ul>
           </div>
@@ -305,5 +303,26 @@
         </section>
       </div>
     </footer>
+    <div class="modal-write-us">
+      <button class="modal-write-us-close" type="button" title="Закрыть">
+        Закрыть
+      </button>
+      <h2 class="modal-write-us-title">Напишите нам</h2>
+      <form class="write-us-form" action="http://echo.htmlacademy.ru" method="post">
+        <label for="write-name" class="first-form">
+          <span>Ваше имя</span>
+          <input type="text" name="name" placeholder="Представьтесь, пожалуйста" id="write-name">
+        </label>
+        <label for="write-mail">
+          <span>Ваш e-mail</span>
+          <input type="text" name="text" placeholder="Для отправки ответа" id="write-mail">
+        </label>
+        <label for="write-text">
+          <span>Текст письма</span>
+          <input type="text" name="post" placeholder="В свободной форме" id="write-text">
+        </label>
+        <button class="send-mail" tipe="submit">Отправить</button>
+      </form>
+    </div>
   </body>
 </html>
