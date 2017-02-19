@@ -528,7 +528,7 @@ h2 {
 
 .catalog-title {
   display: block;
-  width: 725px;
+  width: 100%;
   min-height: 238px;
   margin: 0;
   padding-left: 220px;
