@@ -527,9 +527,11 @@ h2 {
 }
 
 .catalog-title {
+  display: block;
   width: 725px;
   min-height: 238px;
-  margin: auto;
+  margin: 0;
+  padding-left: 220px;
 }
 
 .catalog-title h1 {
