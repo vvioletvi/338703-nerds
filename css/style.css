@@ -1047,26 +1047,27 @@ input[type="checkbox"]+label:disabled::before,
   margin-top: 60px;
 }
 
-/*
-.map {
-  min-height: 417px;
-  background-image: url("../img/map.jpg");
-}
-*/
-
 .map {
   position: relative;
+  min-height: 417px;
+}
+
+.map-img {
+  position: absolute;
+  left: 50%;
+  margin-left: -720px;
 }
 
 .map-markers {
-  position: absolute;
-  top: 55px;
-  left: 50%;
-  margin-left: -580px;
+  position: relative;
+  margin-top: 55px;
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .adress {
-  float: left;
+  position: absolute;
+  top: 55px;
   box-sizing: border-box;
   width: 320px;
   min-height: 310px;
@@ -1096,8 +1097,9 @@ input[type="checkbox"]+label:disabled::before,
 }
 
 .marker {
-  float: left;
-  margin-top: 35px;
+  position: absolute;
+  top: 90px;
+  left: 680px;
 }
 
 .social {
@@ -1198,6 +1200,7 @@ input[type="checkbox"]+label:disabled::before,
 
 .modal-write-us {
   display: none;
+
   position: fixed;
   box-sizing: border-box;
   bottom: 180px;
@@ -1293,20 +1296,10 @@ input[type="checkbox"]+label:disabled::before,
   margin-top: 10px;
 }
 
-.write-us-form textarea[name="post"], #write-text {
+.write-us-form textarea[name="post"] {
   width: 726px;
   min-height: 86px;
   margin-bottom: 40px;
-}
-
-.write-us-form input[type="text"]:focus {
-  border: 2px solid black;
-  outline: none;
-}
-
-.write-us-form textarea[name="post"]:focus {
-  border: 2px solid black;
-  outline: none;
 }
 
 .write-us-form input[type="text"]:focus::-webkit-input-placeholder {
@@ -1325,6 +1318,25 @@ input[type="checkbox"]+label:disabled::before,
 .write-us-form textarea[name="post"]:hover {
   border: 2px solid #b4b9bb;
   outline: none;
+}
+
+.write-us-form input[type="text"]:focus {
+  border: 2px solid black;
+  outline: none;
+}
+
+.write-us-form textarea[name="post"]:focus {
+  border: 2px solid black;
+  outline: none;
+}
+
+.write-us-form-error input[type="text"] {
+  border: 2px solid #e74246;
+  outline: none;
+}
+
+.write-us-form-error input[type="text"]::-webkit-input-placeholder {
+  color: #e74246;
 }
 
 .write-us-form span {
